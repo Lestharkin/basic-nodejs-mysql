@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include('partials/head'); %>
+
+    <body>
+        <div class="row">
+            <div class="col-12">
+    
+                <%- include('partials/nav'); %>
+    
+            </div>
+        </div>
+        <div class="container">
+
+        <div class="row mt-1">
+            <div class="col-3">
+
+            </div>
+            <div class="col-6">
+
+                <form name="formreg" action="/register/insert" method="POST" class="mt-3 mb-3" id="form-reg" >
+                    <fieldset>
+                        <legend>Registro</legend>
+                        <div class="form-group">
+                            <label for="inputNames" class="form-label mt-4">Nombres</label>
+                            <input type="text" class="form-control" name="names" id="inputNames" placeholder="Enter nombres">
+                            <small id="names" class="form-text text-muted">Recuerde los nombres contienen solo
+                                caracteres alfabéticos.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputlastnames" class="form-label mt-4">Apellidos</label>
+                            <input type="text" class="form-control" name="lastnames" id="inputlastnames" placeholder="Enter apellidos">
+                            <small id="lastnames" class="form-text text-muted">Recuerde los apellidos contienen solo
+                                caracteres alfabéticos.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputId" class="form-label mt-4">Identificación</label>
+                            <input type="text" class="form-control" name="idu" id="inputId" placeholder="Enter identificación">
+                            <small id="idu" class="form-text text-muted">Ejemplo: 13451654.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputUser" class="form-label mt-4">Usuario (Email address)</label>
+                            <input type="email" class="form-control" name="user" id="inputUser" placeholder="Enter email">
+                            <small id="user" class="form-text text-muted">Email valido.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPasswd" class="form-label mt-4">Contraseña</label>
+                            <input type="password" class="form-control" name="passwd" id="inputPasswd" placeholder="contraseña">
+                            <small id="idpasswd" class="form-text text-muted">La contraseña debe tener más de ocho
+                                caracteres, además, la contraseña debe contener al menos un número, un carácter
+                                especial y una carácter en mayúscula.</small>
+                        </div>
+                        <div class="text-end">
+                            <button type="submit" class="btn btn-primary mt-3">Enviar</button>
+                        </div>
+
+                    </fieldset>
+                </form>
+
+            </div>
+            <div class="col-3">
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../js/app.js"></script>
+</body>
+
+</html>
